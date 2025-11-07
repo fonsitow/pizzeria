@@ -10,6 +10,13 @@ tipos de programacion
 '''
 
 # Funciondes de entradas de datos
+from typing import Any
 
-def leer_numero() -> :
-  return 
+def leer_numero(msj: str, fun: Any) -> Any:
+  numero: Any
+  while True:
+    try:
+      numero = fun(input(msj + ': '))
+      return numero
+    except ValueError:
+      print(ValueError)
