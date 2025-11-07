@@ -10,7 +10,7 @@ tipos de programacion
 '''
 
 # Funciondes de entradas de datos
-from typing import Any
+from typing import Any, List
 
 def leer_numero(msj: str, fun: Any) -> Any:
   numero: Any
@@ -20,3 +20,10 @@ def leer_numero(msj: str, fun: Any) -> Any:
       return numero
     except ValueError:
       print(ValueError)
+      
+def menu(lista: List[str]) -> None:
+  while True:
+    for i, item in enumerate(lista):
+      print(f' {i}.- {item}')
+    
+    return None
