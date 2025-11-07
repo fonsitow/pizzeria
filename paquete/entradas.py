@@ -25,5 +25,4 @@ def menu(lista: List[str]) -> None:
   while True:
     for i, item in enumerate(lista):
       print(f' {i}.- {item}')
-    
     return None

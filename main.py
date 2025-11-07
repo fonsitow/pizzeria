@@ -40,9 +40,7 @@ def main() -> None:
       encabezado('Metodos de pago', 48)
       for i, item in enumerate(formas_pago):
         print(f' {i}.- {item}')
-      opcion = leer_numero('Selecciona un metodo de pago', 48)
-      
-      
+      opcion = leer_numero('Selecciona un metodo de pago', 48)      
   
   def convert_bs_usd(USD: float) -> float:
     VES: float = 231.05
